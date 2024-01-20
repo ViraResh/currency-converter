@@ -1,0 +1,21 @@
+.currency-table {
+  margin-top: 10px;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.currency-table table {
+  flex-basis: 50%;
+  border-collapse: collapse;
+}
+
+.currency-table th, .currency-table td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.currency-table th {
+  background-color: #f2f2f2;
+}

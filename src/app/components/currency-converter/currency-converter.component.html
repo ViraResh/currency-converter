@@ -1,0 +1,15 @@
+<div class="main-container">
+  <div>
+    <input [(ngModel)]="amount1" type="text" min="0" (input)="convertCurrency(amount1, currency1, amount2, currency2)" />
+    <select [(ngModel)]="currency1" (change)="convertCurrency(amount1, currency1, amount2, currency2)">
+      <option *ngFor="let currency of currencies" [value]="currency">{{ currency }}</option>
+    </select>
+  </div>
+
+  <div>
+    <input [(ngModel)]="amount2" type="text" min="0" (input)="convertCurrency(amount2, currency2, amount1, currency1)" />
+    <select [(ngModel)]="currency2" (change)="convertCurrency(amount2, currency2, amount1, currency1)">
+      <option *ngFor="let currency of currencies" [value]="currency">{{ currency }}</option>
+    </select>
+  </div>
+</div>

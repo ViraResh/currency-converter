@@ -1,0 +1,18 @@
+<div class="currency-table">
+  <table>
+    <thead>
+    <tr>
+      <th>Currency</th>
+      <th>Value</th>
+    </tr>
+    </thead>
+    <tbody>
+    <ng-container *ngFor="let currency of ['USD', 'EUR']">
+      <tr>
+        <td>{{ currency }}</td>
+        <td>{{ convertedRates[currency] }}</td>
+      </tr>
+    </ng-container>
+    </tbody>
+  </table>
+</div>
